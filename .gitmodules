@@ -1,0 +1,6 @@
+[submodule "invoice-client-starter"]
+	path = invoice-client-starter
+	url = https://github.com/PetrTupec/invoice-client-starter
+[submodule "invoice-server-starter"]
+	path = invoice-server-starter
+	url = https://github.com/PetrTupec/invoice-server-starter
