@@ -101,6 +101,38 @@ V této ukázce se podíváme na metodu `getAll`, která je součástí služby 
 - Implementace uživatelské autentizace (Spring Security + JWT)
 - Možnost exportu faktur do PDF
 
+## Spuštění projektu lokálně
+
+### 1. Získejte přístup
+
+Požádejte mě o přístup do následujících soukromých repozitářů:
+- [`invoice-client-starter`](https://github.com/PetrTupec/invoice-client-starter)
+- [`invoice-server-starter`](https://github.com/PetrTupec/invoice-server-starter)
+
+### 2. Naklonujte hlavní repozitář se submoduly
+
+```bash
+git clone --recurse-submodules https://github.com/PetrTupec/invoice-project.git
+cd invoice-project
+```
+
+Pro dopnění samotných submodulů do hlavního repozitáře použijte:
+
+```bash
+git submodule update --init --recursive
+```
+
+### 3. Spusťte aplikaci v Dockeru
+
+```bash
+docker-compose up --build
+```
+
+Po spuštění bude aplikace dostupná:
+
+- Frontend: http://localhost
+- Backend API: http://localhost:8080
+
 ## Přístup ke kódu
 
 Tento repozitář slouží pouze pro účely prezentace projektu. Zdrojový kód je v soukromém repozitáři a přístup lze poskytnout na vyžádání.
